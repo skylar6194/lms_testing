@@ -1,0 +1,1865 @@
+{
+  "id": "90291587-382a-48ec-bb99-6d4760f263d6",
+  "version": "2.0",
+  "name": "UAT-CULMS",
+  "url": "https://lms.cuchd.in/",
+  "tests": [{
+    "id": "f3db03b7-cb50-4f72-b04a-5c933895c880",
+    "name": "Verify Login Page Layout",
+    "commands": [{
+      "id": "1073d2da-70f2-4b5a-9206-30b9c5400f23",
+      "comment": "",
+      "command": "open",
+      "target": "https://lms.cuchd.in/login/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95771a36-1d5e-42ec-b9d7-39360c83bcb5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x845",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c47f2786-c75d-41f7-9d62-7d6130da3c1c",
+      "comment": "",
+      "command": "click",
+      "target": "id=validationCustom02",
+      "targets": [
+        ["id=validationCustom02", "id"],
+        ["name=username", "name"],
+        ["css=#validationCustom02", "css:finder"],
+        ["xpath=//input[@id='validationCustom02']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab45d2d2-2f4d-4001-9e41-ab3203d867f0",
+      "comment": "",
+      "command": "type",
+      "target": "id=validationCustom02",
+      "targets": [
+        ["id=validationCustom02", "id"],
+        ["name=username", "name"],
+        ["css=#validationCustom02", "css:finder"],
+        ["xpath=//input[@id='validationCustom02']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "22bcs14843"
+    }, {
+      "id": "d365c600-4194-4b4e-8406-9abdfdb1e397",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=validationCustom02",
+      "targets": [
+        ["id=validationCustom02", "id"],
+        ["name=username", "name"],
+        ["css=#validationCustom02", "css:finder"],
+        ["xpath=//input[@id='validationCustom02']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "98ab9bf8-acaf-4037-85a5-9366e4cb59f0",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc73d2f0-548a-49ea-bd0c-8d923a0e45de",
+      "comment": "",
+      "command": "click",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//div[@id='page-wrapper']/div/main/div[2]/div/div/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9999cfb-5133-4342-b64a-49cf883ebf07",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//div[@id='page-wrapper']/div/main/div[2]/div/div/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": "Login"
+    }, {
+      "id": "3adaa606-154e-4e2c-9597-4bceedef9611",
+      "comment": "",
+      "command": "click",
+      "target": "css=.loginWrapper",
+      "targets": [
+        ["css=.loginWrapper", "css:finder"],
+        ["xpath=//div[@id='page-wrapper']/div/main", "xpath:idRelative"],
+        ["xpath=//main", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9678f929-b669-4a02-8e50-ada505443238",
+    "name": "Login With Correct Credentials",
+    "commands": [{
+      "id": "89f10821-2e65-40a9-868e-4c2c4ca76820",
+      "comment": "",
+      "command": "open",
+      "target": "https://lms.cuchd.in/login/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "979ba7dd-1c43-41c4-8c47-4c18937744e0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x845",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f14938ef-3fca-401c-b509-8ec9513dfcb3",
+      "comment": "",
+      "command": "click",
+      "target": "id=validationCustom02",
+      "targets": [
+        ["id=validationCustom02", "id"],
+        ["name=username", "name"],
+        ["css=#validationCustom02", "css:finder"],
+        ["xpath=//input[@id='validationCustom02']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9811e48-385a-4053-8ad4-a40d5a67b804",
+      "comment": "",
+      "command": "type",
+      "target": "id=validationCustom02",
+      "targets": [
+        ["id=validationCustom02", "id"],
+        ["name=username", "name"],
+        ["css=#validationCustom02", "css:finder"],
+        ["xpath=//input[@id='validationCustom02']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "22bcs14843"
+    }, {
+      "id": "2d5b49df-2a13-4e1f-bdc6-6a5b280e912c",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=validationCustom02",
+      "targets": [
+        ["id=validationCustom02", "id"],
+        ["name=username", "name"],
+        ["css=#validationCustom02", "css:finder"],
+        ["xpath=//input[@id='validationCustom02']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "19713f1f-814a-41d1-9c1c-a02e6b1d4838",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49ae26d2-6a72-4fe5-b744-fd6726e25f54",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "CONFIDENTIAL"
+    }, {
+      "id": "fd57f598-95dc-45c5-8a72-a91f775ab200",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8288ecf-9cce-41af-8607-0a8ddebbfe01",
+      "comment": "",
+      "command": "click",
+      "target": "css=.recaptcha-checkbox-border",
+      "targets": [
+        ["css=.recaptcha-checkbox-border", "css:finder"],
+        ["xpath=//span[@id='recaptcha-anchor']/div", "xpath:idRelative"],
+        ["xpath=//span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a0577b4-32ef-42db-87db-12491fa15da2",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "ced7542b-f0ac-40a4-8c00-2aee31b0f267",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//button[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div/main/div[2]/div/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d784743-7ca8-42a6-8eb0-0e01663765b0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//div[@id='frontpage-course-list']/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'My courses')]", "xpath:innerText"]
+      ],
+      "value": "My courses"
+    }, {
+      "id": "15944885-ec53-4318-9593-930ef4ba6ea3",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d8a20e53-08df-49d8-9ed1-85e5d12f1a39",
+    "name": "Captcha Test",
+    "commands": [{
+      "id": "48e5fd9c-42b2-458e-b7fb-91f8f75908d6",
+      "comment": "",
+      "command": "open",
+      "target": "https://lms.cuchd.in/login/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a01109c-1b02-498b-ba7a-8e8e768c04c8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x845",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df309d1a-3926-41b8-bf31-cabf4813bbd4",
+      "comment": "",
+      "command": "click",
+      "target": "id=validationCustom02",
+      "targets": [
+        ["id=validationCustom02", "id"],
+        ["name=username", "name"],
+        ["css=#validationCustom02", "css:finder"],
+        ["xpath=//input[@id='validationCustom02']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80045b37-512f-4451-9c08-aee69a35fded",
+      "comment": "",
+      "command": "type",
+      "target": "id=validationCustom02",
+      "targets": [
+        ["id=validationCustom02", "id"],
+        ["name=username", "name"],
+        ["css=#validationCustom02", "css:finder"],
+        ["xpath=//input[@id='validationCustom02']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "22bcs14843"
+    }, {
+      "id": "90f9d0cb-78a2-4bc6-8cd9-4cbd60d47804",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=validationCustom02",
+      "targets": [
+        ["id=validationCustom02", "id"],
+        ["name=username", "name"],
+        ["css=#validationCustom02", "css:finder"],
+        ["xpath=//input[@id='validationCustom02']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "a1fae8a3-fbb9-4e61-8d91-1c9179809887",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f107b1b0-8029-4e90-b886-575738e6453d",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "CONFIDENTIAL"
+    }, {
+      "id": "c86186c5-7d38-4681-bde7-e17cb6ed0c02",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//button[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div/main/div[2]/div/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b8ed5e7-cacd-45ed-a468-fb26cd2fba30",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//div[@id='frontpage-course-list']/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'My courses')]", "xpath:innerText"]
+      ],
+      "value": "My courses"
+    }, {
+      "id": "167b03db-518f-49e5-9847-72d8117b78e0",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "05c9f200-9bae-4a4a-a0e5-dee121607329",
+    "name": "Forgot Password",
+    "commands": [{
+      "id": "0fe3d913-2283-4205-9388-c257f262a042",
+      "comment": "",
+      "command": "open",
+      "target": "https://lms.cuchd.in/login/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a37b28a7-3c51-4c45-bed4-d7cc641a763c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x845",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "669b3d36-7fa0-4f70-91a6-6bee6daf37b4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Forgot Password?",
+      "targets": [
+        ["linkText=Forgot Password?", "linkText"],
+        ["css=.m-0 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Forgot Password?')]", "xpath:link"],
+        ["xpath=//form[@id='login']/div[3]/p/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://uims.cuchd.in/']", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Forgot Password?')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win1072",
+      "windowTimeout": 2000
+    }, {
+      "id": "4b888537-3349-4363-880d-74bac60b615a",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09885104-db43-4f2f-afdf-f858f72ebf8f",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win1072}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d391215e-d0aa-43f1-95da-bffde92e5054",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Welcome to Chandigarh University Information Management System",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "630003db-b895-4e83-a44a-f9d186baaac9",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Welcome to Chandigarh University Information Management System",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "badcfcde-3d7c-4f50-91cb-65a0d3e284b6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-lg-3:nth-child(3) h3",
+      "targets": [
+        ["css=.col-lg-3:nth-child(3) h3", "css:finder"],
+        ["xpath=//div[3]/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Staff Login')]", "xpath:innerText"]
+      ],
+      "value": "Staff Login"
+    }, {
+      "id": "86ada3ee-a191-4314-afcf-1b343e000f7d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-lg-3:nth-child(4) h3",
+      "targets": [
+        ["css=.col-lg-3:nth-child(4) h3", "css:finder"],
+        ["xpath=//div[4]/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Admission Login')]", "xpath:innerText"]
+      ],
+      "value": "Admission Login"
+    }, {
+      "id": "dd853b05-dcda-4c72-b153-5e1a46967f12",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f8726dfd-3064-4e15-8a6c-5f32bf2e53ab",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49614cd2-7080-413c-8b6e-c3a08a1521e0",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "57d7e890-e82c-46b3-9860-5ed3d91f9c10",
+    "name": "Password Hider",
+    "commands": [{
+      "id": "b4031006-ebfa-4279-8e08-f67cf27e1cde",
+      "comment": "",
+      "command": "open",
+      "target": "https://lms.cuchd.in/login/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f7e285e-9942-486d-8cdc-8174ea2bafde",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x845",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c78eae2-9408-4c0a-9f3c-44cc639da1e6",
+      "comment": "",
+      "command": "click",
+      "target": "id=validationCustom02",
+      "targets": [
+        ["id=validationCustom02", "id"],
+        ["name=username", "name"],
+        ["css=#validationCustom02", "css:finder"],
+        ["xpath=//input[@id='validationCustom02']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9dc28ef2-525e-4142-8690-274f4e47499a",
+      "comment": "",
+      "command": "type",
+      "target": "id=validationCustom02",
+      "targets": [
+        ["id=validationCustom02", "id"],
+        ["name=username", "name"],
+        ["css=#validationCustom02", "css:finder"],
+        ["xpath=//input[@id='validationCustom02']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "22bcs14843"
+    }, {
+      "id": "f5c9409a-59c2-4700-ad50-b9a13c6f144d",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=validationCustom02",
+      "targets": [
+        ["id=validationCustom02", "id"],
+        ["name=username", "name"],
+        ["css=#validationCustom02", "css:finder"],
+        ["xpath=//input[@id='validationCustom02']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "9570482d-d1ea-41dd-9cdb-3ff89000ad29",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13ba4670-9032-4b2b-9edd-dac9969a30b3",
+      "comment": "",
+      "command": "waitForElementEditable",
+      "target": "id=password",
+      "targets": [
+        ["id=validationCustom02", "id"],
+        ["name=username", "name"],
+        ["css=#validationCustom02", "css:finder"],
+        ["xpath=//input[@id='validationCustom02']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "1078c0f4-3d0c-4822-b77d-8fbdc86f9135",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "CONFIDENTIAL"
+    }, {
+      "id": "560fede5-25aa-40df-afdb-a64b83d3b2d0",
+      "comment": "",
+      "command": "click",
+      "target": "id=TogglePassword",
+      "targets": [
+        ["id=TogglePassword", "id"],
+        ["css=#TogglePassword", "css:finder"],
+        ["xpath=//i[@id='TogglePassword']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/div/i", "xpath:idRelative"],
+        ["xpath=//div/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c6b4ed0-e97b-445b-8a2b-574dc26f6fa7",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6aac09d5-34f1-43b8-b57c-35f0c8699591",
+      "comment": "",
+      "command": "click",
+      "target": "id=validationCustom02",
+      "targets": [
+        ["id=validationCustom02", "id"],
+        ["name=username", "name"],
+        ["css=#validationCustom02", "css:finder"],
+        ["xpath=//input[@id='validationCustom02']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab8312e6-c1f4-4a80-b9f4-179281c57411",
+      "comment": "",
+      "command": "type",
+      "target": "id=validationCustom02",
+      "targets": [
+        ["id=validationCustom02", "id"],
+        ["name=username", "name"],
+        ["css=#validationCustom02", "css:finder"],
+        ["xpath=//input[@id='validationCustom02']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "22bcs14843"
+    }, {
+      "id": "06df0b97-ec12-4f2d-b04d-6bd812ade5bf",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "24406b94-fcfb-4394-9407-823ac9ac223e",
+    "name": "Verify Logout",
+    "commands": [{
+      "id": "3111855c-f794-4040-b676-128ff4aa6c4b",
+      "comment": "",
+      "command": "open",
+      "target": "https://lms.cuchd.in/login/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28533600-600b-49cf-8ab8-667f56177076",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x880",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "02c0e117-d93b-436e-801d-d16690318c9c",
+      "comment": "",
+      "command": "click",
+      "target": "id=validationCustom02",
+      "targets": [
+        ["id=validationCustom02", "id"],
+        ["name=username", "name"],
+        ["css=#validationCustom02", "css:finder"],
+        ["xpath=//input[@id='validationCustom02']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23206efa-07a2-4ad3-99b9-9c402e44f252",
+      "comment": "",
+      "command": "type",
+      "target": "id=validationCustom02",
+      "targets": [
+        ["id=validationCustom02", "id"],
+        ["name=username", "name"],
+        ["css=#validationCustom02", "css:finder"],
+        ["xpath=//input[@id='validationCustom02']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "22bcs14843"
+    }, {
+      "id": "c6d95dd3-41ff-4ee4-894b-dae179ffe9db",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=validationCustom02",
+      "targets": [
+        ["id=validationCustom02", "id"],
+        ["name=username", "name"],
+        ["css=#validationCustom02", "css:finder"],
+        ["xpath=//input[@id='validationCustom02']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "0c58f7a3-8a23-4cbd-85a5-87f274609280",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "455f243c-288c-4799-99c1-c5496518912d",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Fappy1@"
+    }, {
+      "id": "1fbc49c9-a69e-47d2-9d48-205ee8705c2b",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//button[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div/main/div[2]/div/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c8527ad-a6f3-4fbf-a99c-d004c70ba2bd",
+      "comment": "",
+      "command": "click",
+      "target": "id=action-menu-toggle-1",
+      "targets": [
+        ["id=action-menu-toggle-1", "id"],
+        ["css=#action-menu-toggle-1", "css:finder"],
+        ["xpath=//a[@id='action-menu-toggle-1']", "xpath:attributes"],
+        ["xpath=//div[@id='action-menu-1-menubar']/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//li[2]/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e3c78f0-00f8-4f38-88cf-e0ee87e2d695",
+      "comment": "",
+      "command": "click",
+      "target": "id=actionmenuaction-7",
+      "targets": [
+        ["id=actionmenuaction-7", "id"],
+        ["css=#actionmenuaction-7", "css:finder"],
+        ["xpath=//span[@id='actionmenuaction-7']", "xpath:attributes"],
+        ["xpath=//div[@id='action-menu-1-menu']/a[7]/span", "xpath:idRelative"],
+        ["xpath=//a[7]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Log out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "462245a7-9990-4a97-97b9-3cf10fe603df",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//div[@id='page-wrapper']/div/main/div[2]/div/div/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": "Login"
+    }, {
+      "id": "b7df27f5-35cf-41f0-909a-b74280fbda60",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "792e333a-bbd8-487c-a4ec-84af007868ef",
+    "name": "Verify Landing Page Layout",
+    "commands": [{
+      "id": "9fe378ad-355a-4832-a453-0f0e8de47ff4",
+      "comment": "",
+      "command": "open",
+      "target": "https://lms.cuchd.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0bad6008-84f5-47a5-9bcf-8ef2dc908126",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x845",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4a04fed-fd7f-4515-964a-edf5dce622e8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//header[@id='page-header']/div/div/div/div/div/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'CHANDIGARH UNIVERSITY')]", "xpath:innerText"]
+      ],
+      "value": "CHANDIGARH UNIVERSITY"
+    }, {
+      "id": "71edda0d-1359-42d2-9c31-0801663ea2e7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//div[@id='frontpage-course-list']/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'My courses')]", "xpath:innerText"]
+      ],
+      "value": "My courses"
+    }, {
+      "id": "614680e1-f9e3-4729-a8ca-a796e1b18f49",
+      "comment": "",
+      "command": "click",
+      "target": "id=action-menu-toggle-1",
+      "targets": [
+        ["id=action-menu-toggle-1", "id"],
+        ["css=#action-menu-toggle-1", "css:finder"],
+        ["xpath=//a[@id='action-menu-toggle-1']", "xpath:attributes"],
+        ["xpath=//div[@id='action-menu-1-menubar']/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//li[2]/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d50a8dea-88fb-445a-83d0-f300a40b0eb3",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=actionmenuaction-1",
+      "targets": [
+        ["id=actionmenuaction-1", "id"],
+        ["css=#actionmenuaction-1", "css:finder"],
+        ["xpath=//span[@id='actionmenuaction-1']", "xpath:attributes"],
+        ["xpath=//div[@id='action-menu-1-menu']/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/div/div/div/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'GAGANJOT SINGH .')]", "xpath:innerText"]
+      ],
+      "value": "GAGANJOT SINGH ."
+    }, {
+      "id": "75f4f1bd-d072-4ebc-bde3-04649623326f",
+      "comment": "",
+      "command": "click",
+      "target": "id=action-menu-toggle-1",
+      "targets": [
+        ["id=action-menu-toggle-1", "id"],
+        ["css=#action-menu-toggle-1", "css:finder"],
+        ["xpath=//a[@id='action-menu-toggle-1']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1712996363386_21']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//li[2]/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d184b7d-1d47-4bbf-852d-0a26829cdb3c",
+      "comment": "",
+      "command": "click",
+      "target": "id=action-menu-toggle-1",
+      "targets": [
+        ["id=action-menu-toggle-1", "id"],
+        ["css=#action-menu-toggle-1", "css:finder"],
+        ["xpath=//a[@id='action-menu-toggle-1']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1712996363386_21']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//li[2]/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "977a2fe8-f7c4-4ffe-8957-ee5b0493d826",
+      "comment": "",
+      "command": "click",
+      "target": "id=actionmenuaction-7",
+      "targets": [
+        ["id=actionmenuaction-7", "id"],
+        ["css=#actionmenuaction-7", "css:finder"],
+        ["xpath=//span[@id='actionmenuaction-7']", "xpath:attributes"],
+        ["xpath=//div[@id='action-menu-1-menu']/a[7]/span", "xpath:idRelative"],
+        ["xpath=//a[7]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Log out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "299ae948-f060-40ef-9a26-b55d77c87d09",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "fb508fb1-4316-4dca-a4f5-c916775a485e",
+    "name": "Verify Accessibility toolbar",
+    "commands": [{
+      "id": "eb2c2371-a88f-47fa-8dea-340ea31acb83",
+      "comment": "",
+      "command": "open",
+      "target": "https://lms.cuchd.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4885128b-8d9c-433b-93f9-ab922b58cc3b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x845",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b07b5cbe-cd05-4cf6-85cf-5afff2951b26",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-universal-access",
+      "targets": [
+        ["css=.fa-universal-access", "css:finder"],
+        ["xpath=//span[@id='themesettings-control']/i", "xpath:idRelative"],
+        ["xpath=//div[5]/span/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b7f4766-f4a4-4efc-acf5-49e46b4c09aa",
+      "comment": "",
+      "command": "click",
+      "target": "id=fonttype",
+      "targets": [
+        ["id=fonttype", "id"],
+        ["name=fonttype", "name"],
+        ["css=#fonttype", "css:finder"],
+        ["xpath=//select[@id='fonttype']", "xpath:attributes"],
+        ["xpath=//body[@id='page-site-index']/div[6]/div[2]/div/div/div[2]/div/form/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f178a1e-7ced-4a4e-a87d-b2a5cc061f20",
+      "comment": "",
+      "command": "select",
+      "target": "id=fonttype",
+      "targets": [],
+      "value": "label=Dyslexic font"
+    }, {
+      "id": "f0818e27-8127-406a-9845-90949bd06a1d",
+      "comment": "",
+      "command": "click",
+      "target": "id=enableaccessibilitytoolbar",
+      "targets": [
+        ["id=enableaccessibilitytoolbar", "id"],
+        ["name=enableaccessibilitytoolbar", "name"],
+        ["css=#enableaccessibilitytoolbar", "css:finder"],
+        ["xpath=//input[@id='enableaccessibilitytoolbar']", "xpath:attributes"],
+        ["xpath=//form[@id='yui_3_17_2_1_1713080370682_23']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f23bf606-6e67-4ee1-9054-7dc5b9059135",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal-footer > .btn-primary",
+      "targets": [
+        ["css=.modal-footer > .btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[18]", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1713080370682_26']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf6058c1-4a6d-413b-a9c5-6574c1aa8531",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1538.4000244140625)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d264eb6-01ed-4983-aa63-250fd46f9c7d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//span[@id='user-notifications']/div", "xpath:idRelative"],
+        ["xpath=//span/div", "xpath:position"]
+      ],
+      "value": "×\\nAccessibility settings saved successfully"
+    }, {
+      "id": "53540a5c-8ddf-40ac-8be9-6ee1a68ae3ef",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5e3d67a2-7683-4bfa-adac-f9a9f399c8fe",
+    "name": "Change Theme of LMS",
+    "commands": [{
+      "id": "f3315c6b-b8db-43ef-a985-6c6be30c91e4",
+      "comment": "",
+      "command": "open",
+      "target": "https://lms.cuchd.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d655b560-a6c7-4d16-929e-82c207d47b93",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x845",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ebec0d5f-09d7-4759-b999-a25a37845a19",
+      "comment": "",
+      "command": "click",
+      "target": "id=fontsize_inc",
+      "targets": [
+        ["id=fontsize_inc", "id"],
+        ["linkText=A+", "linkText"],
+        ["css=#fontsize_inc", "css:finder"],
+        ["xpath=//a[contains(text(),'A+')]", "xpath:link"],
+        ["xpath=//a[@id='fontsize_inc']", "xpath:attributes"],
+        ["xpath=//div[@id='accessibilitybar']/div/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'A+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8729cc15-07c5-4121-81a7-88eda4b028eb",
+      "comment": "",
+      "command": "click",
+      "target": "id=sitecolor_color2",
+      "targets": [
+        ["id=sitecolor_color2", "id"],
+        ["css=#sitecolor_color2", "css:finder"],
+        ["xpath=(//a[contains(text(),'A')])[4]", "xpath:link"],
+        ["xpath=//a[@id='sitecolor_color2']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1713080516244_24']/div[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe57cce9-12ba-4c9a-bdd4-b5845022f92e",
+      "comment": "",
+      "command": "click",
+      "target": "id=sitecolor_color3",
+      "targets": [
+        ["id=sitecolor_color3", "id"],
+        ["css=#sitecolor_color3", "css:finder"],
+        ["xpath=(//a[contains(text(),'A')])[5]", "xpath:link"],
+        ["xpath=//a[@id='sitecolor_color3']", "xpath:attributes"],
+        ["xpath=//ul[@id='yui_3_17_2_1_1713080516244_27']/li[3]/a", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "140e116d-1947-4a01-a00d-5442c196b11d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//header[@id='page-header']/div/div/div/div/div/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'CHANDIGARH UNIVERSITY')]", "xpath:innerText"]
+      ],
+      "value": "CHANDIGARH UNIVERSITY"
+    }, {
+      "id": "7b036c12-65d4-43dd-8ec6-67bc91802db3",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "011d7ee0-2d39-4a07-a416-cf8ab3b978ed",
+    "name": "Verify Notification layout",
+    "commands": [{
+      "id": "398125ea-bb39-4b4c-bb8f-f678c492beb7",
+      "comment": "",
+      "command": "open",
+      "target": "https://lms.cuchd.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8503755a-c1f2-4ed9-a0df-621ba7a01c86",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x845",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3da8697-58fc-412b-8c70-c328427ff95e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.slicon-bell",
+      "targets": [
+        ["css=.slicon-bell", "css:finder"],
+        ["xpath=//div[@id='nav-notification-popover-container']/div/i", "xpath:idRelative"],
+        ["xpath=//div/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5dfeb1c3-e551-417c-9631-046bdd9889ce",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.popover-region-header-text",
+      "targets": [
+        ["css=.popover-region-header-text", "css:finder"],
+        ["xpath=//div[@id='popover-region-container-661b89a866306661b89a8655932']/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Notifications')]", "xpath:innerText"]
+      ],
+      "value": "Notifications"
+    }, {
+      "id": "c2472e55-4a54-46a9-ae22-29275f937f25",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.popover-region-seeall-text",
+      "targets": [
+        ["css=.popover-region-seeall-text", "css:finder"],
+        ["xpath=//div[@id='popover-region-container-661b89a866306661b89a8655932']/a/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/a/div/div", "xpath:position"]
+      ],
+      "value": "See all"
+    }, {
+      "id": "d032c9b0-b4ce-4608-9d53-a5c79ebe91e8",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.popover-region-content-container",
+      "targets": [
+        ["css=.popover-region-content-container", "css:finder"],
+        ["xpath=//div[@id='popover-region-container-661b89a866306661b89a8655932']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7c46c5b-d3c2-4173-9296-a5735379e226",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e9a60be9-42f4-46ca-b350-f664e6ffbcc7",
+    "name": "Verify Notification preferences button ",
+    "commands": [{
+      "id": "4bbb9aab-6bc8-4289-94c5-0dbecb5e1446",
+      "comment": "",
+      "command": "open",
+      "target": "https://lms.cuchd.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d335393-854c-403e-a34b-30f9b362b646",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x845",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56513b2e-f5c7-4cdd-b6a2-48d672143b1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.slicon-bell",
+      "targets": [
+        ["css=.slicon-bell", "css:finder"],
+        ["xpath=//div[@id='nav-notification-popover-container']/div/i", "xpath:idRelative"],
+        ["xpath=//div/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcf7e77a-b7cb-4ff9-b8ab-28fbd7a8475f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover-tooltip-container .slicon-settings",
+      "targets": [
+        ["css=.hover-tooltip-container .slicon-settings", "css:finder"],
+        ["xpath=//div[@id='popover-region-container-661b8c68df0e8661b8c68de2d12']/div/div/div[2]/a/i", "xpath:idRelative"],
+        ["xpath=//a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75d12fdf-695f-4f9e-a5c7-d4f037366efd",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=single_button661b8c6d55b9214",
+      "targets": [
+        ["id=single_button661b8c6d55b9214", "id"],
+        ["css=#single_button661b8c6d55b9214", "css:finder"],
+        ["xpath=//button[@id='single_button661b8c6d55b9214']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div/div/div/div[4]/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": "Continue"
+    }, {
+      "id": "cd8707a2-8adc-41fa-a0e5-0582333e0ece",
+      "comment": "",
+      "command": "click",
+      "target": "id=single_button661b8c6d55b9214",
+      "targets": [
+        ["id=single_button661b8c6d55b9214", "id"],
+        ["css=#single_button661b8c6d55b9214", "css:finder"],
+        ["xpath=//button[@id='single_button661b8c6d55b9214']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div/div/div/div[4]/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a6030d3-8f91-456d-86ab-5d3bc7f1e2bd",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2dc45cd5-9fdb-491d-98c2-a1af1313d683",
+    "name": "Notification See All Button",
+    "commands": [{
+      "id": "33997db1-bdc5-49b4-97fb-a14009cd2e1d",
+      "comment": "",
+      "command": "open",
+      "target": "https://lms.cuchd.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "40892c8d-d33c-405c-b4b7-02cdd4c6d119",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x845",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f795a026-8570-46cb-a5ef-9dcf9ac1de9d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.slicon-bell",
+      "targets": [
+        ["css=.slicon-bell", "css:finder"],
+        ["xpath=//div[@id='nav-notification-popover-container']/div/i", "xpath:idRelative"],
+        ["xpath=//div/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6945e339-3f3e-4e5f-916a-8e7fdecfe2b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.popover-region-seeall-text",
+      "targets": [
+        ["css=.popover-region-seeall-text", "css:finder"],
+        ["xpath=//div[@id='popover-region-container-661b8c0498d29661b8c0497eb72']/a/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "24f486ab-18f3-4369-a6b7-313a99d316e5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.empty-text:nth-child(4)",
+      "targets": [
+        ["css=.empty-text:nth-child(4)", "css:finder"],
+        ["xpath=//section[@id='region-main']/div/div/div/div/div[2]/div[4]", "xpath:idRelative"],
+        ["xpath=//section/div/div/div/div/div[2]/div[4]", "xpath:position"]
+      ],
+      "value": "Select from the list of notifications on the side to view more details"
+    }, {
+      "id": "9fd08381-e11a-4851-92c8-22ee35d76c12",
+      "comment": "",
+      "command": "click",
+      "target": "css=.content-item-container:nth-child(1) .timestamp",
+      "targets": [
+        ["css=.content-item-container:nth-child(1) .timestamp", "css:finder"],
+        ["xpath=//section[@id='region-main']/div/div/div/div/div/div[2]/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9288e0d5-c1b0-43cb-bf99-f65bf737e44f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d5ade520-6029-47b9-97da-89ecf0f5f483",
+    "name": "Verify Content Folder Functioning",
+    "commands": [{
+      "id": "a2375411-6395-4d4f-a600-1c19081cc461",
+      "comment": "",
+      "command": "open",
+      "target": "https://lms.cuchd.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "946716f9-7f91-4a76-bf5d-412c898d0041",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x845",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f5d2008-6870-4739-9c7d-cf28fdbe19c2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CONT_22TDT-292 :: APTITUDE-II",
+      "targets": [
+        ["linkText=CONT_22TDT-292 :: APTITUDE-II", "linkText"],
+        ["css=.card-deck:nth-child(1) > .card:nth-child(1) > .card-body a", "css:finder"],
+        ["xpath=//a[contains(text(),'CONT_22TDT-292 :: APTITUDE-II')]", "xpath:link"],
+        ["xpath=//div[@id='frontpage-course-list']/div/div/div/div[2]/h4/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://lms.cuchd.in/course/view.php?id=55449')])[2]", "xpath:href"],
+        ["xpath=//h4/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CONT_22TDT-292 :: APTITUDE-II')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b9f2056-049c-4ef4-98f4-83f21f237298",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.tab_position_0 > .sectionname",
+      "targets": [
+        ["css=.tab_position_0 > .sectionname", "css:finder"],
+        ["xpath=//section[@id='region-main']/div/div/div/div/div/ul/li/a/innertab/span", "xpath:idRelative"],
+        ["xpath=//innertab/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Course Overview')]", "xpath:innerText"]
+      ],
+      "value": "Course Overview"
+    }, {
+      "id": "4f51e276-c51b-47a9-9351-a33b20278c28",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tab_position_1 > .sectionname",
+      "targets": [
+        ["css=.tab_position_1 > .sectionname", "css:finder"],
+        ["xpath=//section[@id='region-main']/div/div/div/div/div/ul/li[2]/a/innertab/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/innertab/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Unit-1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "692c3741-aad2-4075-b953-642bfc16e59e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.active > .tab_level_0 > .sectionname",
+      "targets": [
+        ["css=.active > .tab_level_0 > .sectionname", "css:finder"],
+        ["xpath=//section[@id='region-main']/div/div/div/div/div/ul/li[2]/a/innertab/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/innertab/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Unit-1')]", "xpath:innerText"]
+      ],
+      "value": "Unit-1"
+    }, {
+      "id": "4a9092ea-2646-43f0-8f3e-d1a75d502201",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tab_position_12 > .sectionname",
+      "targets": [
+        ["css=.tab_position_12 > .sectionname", "css:finder"],
+        ["xpath=//section[@id='region-main']/div/div/div/div/div/ul/li[3]/a/innertab/span", "xpath:idRelative"],
+        ["xpath=//li[3]/a/innertab/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Unit-2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f755a2a4-5810-4c06-8582-c1c71f65a68e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.active > .tab_level_0 > .sectionname",
+      "targets": [
+        ["css=.active > .tab_level_0 > .sectionname", "css:finder"],
+        ["xpath=//section[@id='region-main']/div/div/div/div/div/ul/li[3]/a/innertab/span", "xpath:idRelative"],
+        ["xpath=//li[3]/a/innertab/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Unit-2')]", "xpath:innerText"]
+      ],
+      "value": "Unit-2"
+    }, {
+      "id": "171b4b58-716a-4732-b4ce-69cfcbda3649",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "fa59f956-d095-4899-9b33-3b6e79468e49",
+    "name": "Verify formal folder Functioning",
+    "commands": [{
+      "id": "7c98857b-4e0a-4920-8179-1528c5386a06",
+      "comment": "",
+      "command": "open",
+      "target": "https://lms.cuchd.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ad07c5c-d369-4a2b-956e-da9363ffbd56",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x845",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65af8e38-61cc-462c-8e86-84401a1ec80d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=22TDP-291_22BCS_TPP-818_B :: SOFT SKILLS II",
+      "targets": [
+        ["linkText=22TDP-291_22BCS_TPP-818_B :: SOFT SKILLS II", "linkText"],
+        ["css=.card-deck:nth-child(3) > .card:nth-child(1) > .card-body a", "css:finder"],
+        ["xpath=//a[contains(text(),'22TDP-291_22BCS_TPP-818_B :: SOFT SKILLS II')]", "xpath:link"],
+        ["xpath=//div[@id='frontpage-course-list']/div/div[3]/div/div[2]/h4/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://lms.cuchd.in/course/view.php?id=67177')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div/div[2]/h4/a", "xpath:position"],
+        ["xpath=//a[contains(.,'22TDP-291_22BCS_TPP-818_B :: SOFT SKILLS II')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4e35572-e333-4196-883a-6513239d601e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tab_position_3 > .sectionname",
+      "targets": [
+        ["css=.tab_position_3 > .sectionname", "css:finder"],
+        ["xpath=//section[@id='region-main']/div/div/div/div/div/ul/li[4]/a/innertab/span", "xpath:idRelative"],
+        ["xpath=//li[4]/a/innertab/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Unit-1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1df91a19-9a2e-4a12-87e7-a8578807ca88",
+      "comment": "",
+      "command": "click",
+      "target": "css=#module-1814610 .instancename",
+      "targets": [
+        ["css=#module-1814610 .instancename", "css:finder"],
+        ["xpath=//li[@id='module-1814610']/div/div/div[2]/div/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/div/div/div[2]/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Formal Quiz 1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cf212d4-2ac9-42c5-b6d4-55f96c6bb4f7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.quizinfo > p:nth-child(1)",
+      "targets": [
+        ["css=.quizinfo > p:nth-child(1)", "css:finder"],
+        ["xpath=//section[@id='region-main']/div/div/div/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Attempts allowed: 1')]", "xpath:innerText"]
+      ],
+      "value": "Attempts allowed: 1"
+    }, {
+      "id": "28022efd-c443-457e-a303-e2f7fea9f360",
+      "comment": "",
+      "command": "click",
+      "target": "id=single_button661b8f444422214",
+      "targets": [
+        ["id=single_button661b8f444422214", "id"],
+        ["css=#single_button661b8f444422214", "css:finder"],
+        ["xpath=//button[@id='single_button661b8f444422214']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div/div/div/div[3]/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Back to the course')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "da373c4b-1090-4d44-9134-855977f1a551",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5d61914f-bdea-4ffd-8158-96f4147e8d7d",
+    "name": "Verify Calendar functioning",
+    "commands": [{
+      "id": "9bbe50fa-7208-4988-80c3-536fa0732a7b",
+      "comment": "",
+      "command": "open",
+      "target": "https://lms.cuchd.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e43261b0-6e3f-4811-aec1-ef2282ac0e88",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x845",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e1001d1-82cb-4372-9013-232cbf75c8b9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Calendar",
+      "targets": [
+        ["linkText=Calendar", "linkText"],
+        ["css=.list-group > .list-group-item:nth-child(3) > a", "css:finder"],
+        ["xpath=//div[@id='nav-drawer']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://lms.cuchd.in/calendar/view.php?view=month')]", "xpath:href"],
+        ["xpath=//div[4]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Calendar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c6ee1e4-b683-4d5f-acf9-cc7df936d72d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.current:nth-child(3)",
+      "targets": [
+        ["css=.current:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='month-navigation-661b8ff5d3fb2661b8ff5be45216']/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'April 2024')]", "xpath:innerText"]
+      ],
+      "value": "April 2024"
+    }, {
+      "id": "73f4f18a-e6e7-48e1-af6b-9e7a02bc6bb9",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=single_button661b8ff5be45217",
+      "targets": [
+        ["id=single_button661b8ff5be45217", "id"],
+        ["css=#single_button661b8ff5be45217", "css:finder"],
+        ["xpath=//button[@id='single_button661b8ff5be45217']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div/div/div/div/div[2]/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Export calendar')]", "xpath:innerText"]
+      ],
+      "value": "Export calendar"
+    }, {
+      "id": "32d42b5a-eafa-4486-8d1d-7eae49e4e723",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "df05e36a-4286-47f3-ad83-8b45773c9551",
+    "name": "Verify Grades tab ",
+    "commands": [{
+      "id": "6b91b6ea-d30e-4fec-9b57-cbbc92aa4731",
+      "comment": "",
+      "command": "open",
+      "target": "https://lms.cuchd.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1a49d1d-05c4-4b8a-b31b-2fb062ba5e77",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x845",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9543c0fd-79d1-47da-8359-c324be346c4e",
+      "comment": "",
+      "command": "click",
+      "target": "id=action-menu-toggle-1",
+      "targets": [
+        ["id=action-menu-toggle-1", "id"],
+        ["css=#action-menu-toggle-1", "css:finder"],
+        ["xpath=//a[@id='action-menu-toggle-1']", "xpath:attributes"],
+        ["xpath=//div[@id='action-menu-1-menubar']/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//li[2]/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a7df045-5925-4af5-9626-21ecdba418eb",
+      "comment": "",
+      "command": "click",
+      "target": "id=actionmenuaction-4",
+      "targets": [
+        ["id=actionmenuaction-4", "id"],
+        ["css=#actionmenuaction-4", "css:finder"],
+        ["xpath=//span[@id='actionmenuaction-4']", "xpath:attributes"],
+        ["xpath=//div[@id='action-menu-1-menu']/a[4]/span", "xpath:idRelative"],
+        ["xpath=//a[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Grades')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e021073b-0fba-4202-bacf-89e56b4d823a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.no-overflow > h3",
+      "targets": [
+        ["css=.no-overflow > h3", "css:finder"],
+        ["xpath=//section[@id='region-main']/div/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Courses I am taking')]", "xpath:innerText"]
+      ],
+      "value": "Courses I am taking"
+    }, {
+      "id": "6ad7b779-0dee-4076-a881-7236b74ab37e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.header:nth-child(1)",
+      "targets": [
+        ["css=.header:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='overview-grade']/thead/tr/th", "xpath:idRelative"],
+        ["xpath=//th", "xpath:position"],
+        ["xpath=//th[contains(.,'Course name')]", "xpath:innerText"]
+      ],
+      "value": "Course name"
+    }, {
+      "id": "6cd14c19-1c55-4918-8a1e-8ca8a0f3f262",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.header:nth-child(2)",
+      "targets": [
+        ["css=.header:nth-child(2)", "css:finder"],
+        ["xpath=//table[@id='overview-grade']/thead/tr/th[2]", "xpath:idRelative"],
+        ["xpath=//th[2]", "xpath:position"],
+        ["xpath=//th[contains(.,'Grade')]", "xpath:innerText"]
+      ],
+      "value": "Grade"
+    }, {
+      "id": "8f75e39a-af6d-4418-b138-0e456a8e5df5",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "fad997c6-8e8f-4baa-837a-7bf9370c5aeb",
+    "name": "Verify Profile Page",
+    "commands": [{
+      "id": "81b0b6b0-2ec5-4d29-b671-6ae6e4079c66",
+      "comment": "",
+      "command": "open",
+      "target": "https://lms.cuchd.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c752dde7-edfc-4a6b-b0cc-150b125a3366",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x845",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f6f767b-ecf8-4f4f-8c22-ab5d049f51b8",
+      "comment": "",
+      "command": "click",
+      "target": "id=action-menu-toggle-1",
+      "targets": [
+        ["id=action-menu-toggle-1", "id"],
+        ["css=#action-menu-toggle-1", "css:finder"],
+        ["xpath=//a[@id='action-menu-toggle-1']", "xpath:attributes"],
+        ["xpath=//div[@id='action-menu-1-menubar']/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//li[2]/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60c966e3-92da-4cad-be05-7c48c863fc9d",
+      "comment": "",
+      "command": "click",
+      "target": "id=actionmenuaction-3",
+      "targets": [
+        ["id=actionmenuaction-3", "id"],
+        ["css=#actionmenuaction-3", "css:finder"],
+        ["xpath=//span[@id='actionmenuaction-3']", "xpath:attributes"],
+        ["xpath=//div[@id='action-menu-1-menu']/a[3]/span", "xpath:idRelative"],
+        ["xpath=//a[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Profile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "62dcf541-51dd-43a3-b7e2-1ed18667ea59",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=courses-tab",
+      "targets": [
+        ["id=courses-tab", "id"],
+        ["linkText=Courses", "linkText"],
+        ["css=#courses-tab", "css:finder"],
+        ["xpath=//a[contains(text(),'Courses')]", "xpath:link"],
+        ["xpath=//a[@id='courses-tab']", "xpath:attributes"],
+        ["xpath=//ul[@id='myTab']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#cursos')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Courses')]", "xpath:innerText"]
+      ],
+      "value": "Courses"
+    }, {
+      "id": "de8b668f-2dce-423e-b32e-d54aca438d8c",
+      "comment": "",
+      "command": "click",
+      "target": "id=details-tab",
+      "targets": [
+        ["id=details-tab", "id"],
+        ["linkText=Details", "linkText"],
+        ["css=#details-tab", "css:finder"],
+        ["xpath=//a[contains(text(),'Details')]", "xpath:link"],
+        ["xpath=//a[@id='details-tab']", "xpath:attributes"],
+        ["xpath=//ul[@id='myTab']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#details')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Details')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1115901-b0d9-4749-806c-ad361fe25077",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.node_category:nth-child(1) .lead",
+      "targets": [
+        ["css=.node_category:nth-child(1) .lead", "css:finder"],
+        ["xpath=//div[@id='details']/div/div/div/section/div/h3", "xpath:idRelative"],
+        ["xpath=//section/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'User details')]", "xpath:innerText"]
+      ],
+      "value": "User details"
+    }, {
+      "id": "646e0fac-1f5a-4f26-b193-e5db8b76ea1a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.node_category:nth-child(4) .lead",
+      "targets": [
+        ["css=.node_category:nth-child(4) .lead", "css:finder"],
+        ["xpath=//div[@id='details']/div/div/div/section[4]/div/h3", "xpath:idRelative"],
+        ["xpath=//section[4]/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Reports')]", "xpath:innerText"]
+      ],
+      "value": "Reports"
+    }, {
+      "id": "504fdf3a-29a3-43c2-8b6e-2ea6e5e57a50",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.node_category:nth-child(5) .lead",
+      "targets": [
+        ["css=.node_category:nth-child(5) .lead", "css:finder"],
+        ["xpath=//div[@id='details']/div/div/div/section[5]/div/h3", "xpath:idRelative"],
+        ["xpath=//section[5]/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Login activity')]", "xpath:innerText"]
+      ],
+      "value": "Login activity"
+    }, {
+      "id": "dc6a7e20-8961-40e4-bc33-20fcb1bf11a2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.node_category:nth-child(2) .lead",
+      "targets": [
+        ["css=.node_category:nth-child(2) .lead", "css:finder"],
+        ["xpath=//div[@id='details']/div/div/div/section[2]/div/h3", "xpath:idRelative"],
+        ["xpath=//section[2]/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Course details')]", "xpath:innerText"]
+      ],
+      "value": "Course details"
+    }, {
+      "id": "ded2d42a-370e-449e-8ecb-fea36f38b749",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "cf136ee9-8919-4a97-85d5-ed31a99c539e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }, {
+    "id": "43f7b7a5-4dcf-4fc4-be5a-691cbbe0dcfa",
+    "name": "Login and Registration",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d8a20e53-08df-49d8-9ed1-85e5d12f1a39", "9678f929-b669-4a02-8e50-ada505443238", "f3db03b7-cb50-4f72-b04a-5c933895c880", "05c9f200-9bae-4a4a-a0e5-dee121607329", "57d7e890-e82c-46b3-9860-5ed3d91f9c10", "24406b94-fcfb-4394-9407-823ac9ac223e"]
+  }, {
+    "id": "eaeaf034-e572-412a-b823-3db8967fe478",
+    "name": "Landing Page",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["792e333a-bbd8-487c-a4ec-84af007868ef", "fb508fb1-4316-4dca-a4f5-c916775a485e", "5e3d67a2-7683-4bfa-adac-f9a9f399c8fe"]
+  }, {
+    "id": "745eeb41-31e8-4a2e-acb1-3c453aab8bd9",
+    "name": "Notifications",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["011d7ee0-2d39-4a07-a416-cf8ab3b978ed", "e9a60be9-42f4-46ca-b350-f664e6ffbcc7", "2dc45cd5-9fdb-491d-98c2-a1af1313d683"]
+  }, {
+    "id": "3014a3ab-b369-4df8-a163-a8b831b709c6",
+    "name": "Content Folder",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d5ade520-6029-47b9-97da-89ecf0f5f483"]
+  }, {
+    "id": "5fefc346-6d96-4b00-a567-4aff16f09530",
+    "name": "Formal Folder",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fa59f956-d095-4899-9b33-3b6e79468e49"]
+  }, {
+    "id": "32a48430-effb-4a7c-b586-834b583051e0",
+    "name": "Calendar ",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5d61914f-bdea-4ffd-8158-96f4147e8d7d"]
+  }, {
+    "id": "37756f9e-534c-4669-839c-cfde5fb22b0d",
+    "name": "My Profile",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fad997c6-8e8f-4baa-837a-7bf9370c5aeb"]
+  }, {
+    "id": "16904c5a-1a60-4f37-8a8f-5c097f4c4e6a",
+    "name": "Grades",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["df05e36a-4286-47f3-ad83-8b45773c9551"]
+  }],
+  "urls": ["https://lms.cuchd.in/login/index.php", "https://lms.cuchd.in/"],
+  "plugins": []
+}
